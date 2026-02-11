@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Kaio Kevin</title>
+    <style>
+        /* Configurações Gerais */
+        :root {
+            --primary-blue: #0047AB; /* Azul similar ao da imagem */
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-color: #fff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Container Principal (Folha A4 simulada) */
+        .container {
+            max-width: 800px;
+            background: var(--bg-color);
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-top: 10px solid var(--primary-blue); /* Detalhe azul no topo */
+        }
+
+        /* Cabeçalho */
+        header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary-blue);
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            font-weight: 500;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .contact-info {
+            list-style: none;
+            font-size: 0.9em;
+            color: var(--primary-blue);
+        }
+
+        .contact-info li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info a {
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        /* Seções */
+        section {
+            margin-bottom: 25px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            font-size: 1.1em;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        /* Detalhes da Experiência e Educação */
+        .job-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .date {
+            color: var(--text-dark);
+        }
+
+        .role-title {
+            color: var(--primary-blue);
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        /* Lista de Habilidades */
+        ul.skills-list {
+            list-style-position: inside;
+            padding-left: 5px;
+        }
+
+        ul.skills-list li {
+            margin-bottom: 8px;
+        }
+
+        /* Responsividade para Celular */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>KAIO KEVIN</h1>
+            <div class="subtitle">Assistente Administrativo | Suporte em TI e Projetos</div>
+            
+            <ul class="contact-info">
+                <li>• Telefone: (61) 9 8242-3950</li>
+                <li>• E-mail: <a href="mailto:kaiokevinnunes@gmail.com">kaiokevinnunes@gmail.com</a></li>
+                <li>• LinkedIn: <a href="https://linkedin.com/in/kaiokevin" target="_blank">linkedin.com/in/kaiokevin</a></li>
+                <li>• Localidade: Brasília - DF</li>
+            </ul>
+        </header>
+
+        <section>
+            <h2>Experiência:</h2>
+            <div class="job-header">
+                <span>Fábrica de Software - Centro Universitário Euroamericano</span>
+                <span class="date">2025 - Atual</span>
+            </div>
+            <span class="role-title">Assistente de Projetos e Suporte</span>
+            <p>
+                Atuo como ponto focal no acompanhamento de projetos, sendo responsável pelo gerenciamento de fluxos de trabalho e cronogramas para assegurar a conclusão de entregas dentro dos prazos de SLA definidos. Minhas atividades incluem a redação e organização de documentos operacionais, o registro de chamados e a elaboração de relatórios de desempenho e controle para suporte à tomada de decisão. Presto apoio técnico no alinhamento de ferramentas digitais entre equipes, garantindo a funcionalidade dos sistemas e realizando treinamentos internos para promover um ambiente colaborativo. Além disso, realizo a coleta de feedbacks e a análise de requisitos, focando na proposição de melhorias contínuas nos processos e na resolução proativa de imprevistos com foco na qualidade e no atendimento às expectativas dos clientes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Formação Acadêmica:</h2>
+            <div class="edu-header">
+                <span>Cursando - Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
+            </div>
+            <div class="edu-header">
+                <span>Centro Universitário Euroamericano</span>
+                <span class="date">2024 - 2026</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>Objetivo Profissional:</h2>
+            <p>
+                Profissional com sólida experiência em gestão de fluxos de trabalho, suporte técnico e acompanhamento de projetos. Busco aplicar minhas competências em organização operacional, prestação de contas e domínio de ferramentas de TI para otimizar os processos administrativos e garantir a eficiência das entregas da instituição.
+            </p>
+        </section>
+
+        <section>
+            <h2>Habilidades e Idiomas:</h2>
+            <ul class="skills-list">
+                <li>Inglês intermediário (compreensão de comandos e operação de interfaces de sistemas em língua estrangeira).</li>
+                <li>Prestação de contas, controle e atualização de planilhas operacionais, gestão de tempo e priorização de demandas simultâneas.</li>
+                <li>Domínio avançado de Google Workspace (Planilhas, Docs, Drive) e Pacote Office (Excel, Word e PowerPoint).</li>
+                <li>Experiência com CRMs, Ferramentas de Gestão (Trello, Teams, Slack) e suporte a usuários em ambientes digitais.</li>
+                <li>Comunicação clara e empática, proatividade na resolução de problemas críticos e facilidade de adaptação a novos processos.</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
